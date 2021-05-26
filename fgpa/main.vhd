@@ -32,8 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity main is
     Port ( Sen1 : in  STD_LOGIC;
            Sen2 : in  STD_LOGIC;
-           Data : in  STD_LOGIC_VECTOR (6 downto 0);
-           seg : in  STD_LOGIC_VECTOR (1 downto 0);
+           Data : out  STD_LOGIC_VECTOR (6 downto 0);
+           seg : out  STD_LOGIC_VECTOR (1 downto 0);
            CLK : in  STD_LOGIC);
 end main;
 
@@ -47,13 +47,16 @@ architecture Behavioral of main is
 		s:in std_logic;
 		D0:out std_logic_vector(6 downto 0));
 	end component;
-	component 1to2Decoder
+	component Decoder1to2
 		port(I : in std_logic;
 		O:out std_logic_vector(1 downto 0));
 	end component;
-	signal 
+	signal A,B : std_logic_vector( 3 downto 0);
 begin
-
+	IC1:UP_DOWNCOUNT15 port map(I=>Sen1,O=>Sen2,D1=>A,D10=>B);
+	IC2:Display port map(D1=>A,D10=>B,S=>CLK,D0=>Data);
+	IC3:Decoder1to2 port map(I=>CLK , O=>seg);
+	
 
 end Behavioral;
 
