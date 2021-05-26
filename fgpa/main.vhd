@@ -30,16 +30,17 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity main is
-    Port ( Sen1 : in  STD_LOGIC;
-           Sen2 : in  STD_LOGIC;
+    Port ( Sen : in  STD_LOGIC;
+           Trigger : in  STD_LOGIC;
            Data : out  STD_LOGIC_VECTOR (6 downto 0);
            seg : out  STD_LOGIC_VECTOR (1 downto 0);
+			  comm: out STD_logic_vector(1 downto 0);
            CLK : in  STD_LOGIC);
 end main;
 
 architecture Behavioral of main is
 	component UP_DOWNCOUNT15
-		port(Sen1,Sen2:in std_logic;
+		port(Sen,CLK:in std_logic;
 		D1 , D10: out std_logic_vector(3 downto 0));
 	end component;
 	component Display
@@ -59,11 +60,11 @@ architecture Behavioral of main is
 	signal C : std_logic;
 	
 begin
-	IC1:UP_DOWNCOUNT15 port map(Sen1=>Sen1,Sen2=>Sen2,D1=>A,D10=>B);
+	IC1:UP_DOWNCOUNT15 port map(Sen=>Sen,CLK=>Trigger,D1=>A,D10=>B);
 	IC2:Display port map(D1=>A,D10=>B,S=>C,D0=>Data);
 	IC3:Decoder1to2 port map(I=>C , O=>seg);
 	IC4:ClockDivider port map(clk => CLK,reset=>'0',clock_out=>C);
-	
+	comm <= "11";
 
 end Behavioral;
 

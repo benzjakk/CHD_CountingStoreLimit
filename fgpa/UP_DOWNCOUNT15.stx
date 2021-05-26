@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.11 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: UP_DOWNCOUNT15.prj
 
@@ -45,7 +45,7 @@ Parsing architecture <Behavioral> of entity <up_downcount15>.
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.17 secs
+Total CPU time to Xst completion: 3.16 secs
  
 --> 
 

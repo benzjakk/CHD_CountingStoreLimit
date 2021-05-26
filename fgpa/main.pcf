@@ -1,16 +1,18 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 27 00:00:57 2021
+// Written by: Map P.20131013 on Thu May 27 00:49:58 2021
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "Sen1" LOCATE = SITE "P46" LEVEL 1;
-PIN Sen1_pin<0> = BEL "Sen1" PINNAME PAD;
-PIN "Sen1_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
-COMP "Sen2" LOCATE = SITE "P47" LEVEL 1;
-PIN Sen2_pin<0> = BEL "Sen2" PINNAME PAD;
-PIN "Sen2_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
-COMP "seg<0>" LOCATE = SITE "P44" LEVEL 1;
-COMP "seg<1>" LOCATE = SITE "P43" LEVEL 1;
+COMP "Trigger" LOCATE = SITE "P45" LEVEL 1;
+PIN Trigger_pin<0> = BEL "Trigger" PINNAME PAD;
+PIN "Trigger_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "Sen" LOCATE = SITE "P56" LEVEL 1;
+PIN Sen_pin<0> = BEL "Sen" PINNAME PAD;
+PIN "Sen_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "seg<0>" LOCATE = SITE "P43" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "P44" LEVEL 1;
+COMP "comm<0>" LOCATE = SITE "P30" LEVEL 1;
+COMP "comm<1>" LOCATE = SITE "P33" LEVEL 1;
 COMP "Data<0>" LOCATE = SITE "P27" LEVEL 1;
 COMP "Data<1>" LOCATE = SITE "P29" LEVEL 1;
 COMP "Data<2>" LOCATE = SITE "P32" LEVEL 1;
