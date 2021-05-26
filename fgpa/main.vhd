@@ -38,8 +38,8 @@ entity main is
 end main;
 
 architecture Behavioral of main is
-	component UP_DOWNCOUNTER15
-		port(I,O:in std_logic;
+	component UP_DOWNCOUNT15
+		port(Sen1,Sen2:in std_logic;
 		D1 , D10: out std_logic_vector(3 downto 0));
 	end component;
 	component Display
@@ -53,7 +53,7 @@ architecture Behavioral of main is
 	end component;
 	signal A,B : std_logic_vector( 3 downto 0);
 begin
-	IC1:UP_DOWNCOUNT15 port map(I=>Sen1,O=>Sen2,D1=>A,D10=>B);
+	IC1:UP_DOWNCOUNT15 port map(Sen1=>Sen1,Sen2=>Sen2,D1=>A,D10=>B);
 	IC2:Display port map(D1=>A,D10=>B,S=>CLK,D0=>Data);
 	IC3:Decoder1to2 port map(I=>CLK , O=>seg);
 	

@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MUX2_4bit instance_name (
+    .D1(D1), 
+    .D2(D2), 
+    .S(S), 
+    .O(O)
+    );
+
+

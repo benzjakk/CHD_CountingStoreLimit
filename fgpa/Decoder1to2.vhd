@@ -40,7 +40,9 @@ begin
 	process(I)
 	begin
 	case I is
-		when "0" => O <= "01"; when "01" => O <= "10";
+		when '0' => O <= "01"; 
+		when '1' => O <= "10";
+		when others => O <= "01";
 	end case;
 	end process;
 

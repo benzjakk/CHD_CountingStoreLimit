@@ -1,0 +1,12 @@
+EN display NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Display.vhd sub00/vhpl08 1622043537
+EN bcdto7seg NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/BCDto7seg.vhd sub00/vhpl02 1622043535
+AR main behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/main.vhd sub00/vhpl11 1622043542
+AR display behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Display.vhd sub00/vhpl09 1622043538
+EN up_downcount15 NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/UP_DOWNCOUNT15.vhd sub00/vhpl06 1622043519
+EN main NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/main.vhd sub00/vhpl10 1622043541
+AR decoder1to2 behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Decoder1to2.vhd sub00/vhpl04 1622043540
+AR up_downcount15 behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/UP_DOWNCOUNT15.vhd sub00/vhpl07 1622043520
+AR bcdto7seg behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/BCDto7seg.vhd sub00/vhpl03 1622043536
+EN decoder1to2 NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Decoder1to2.vhd sub00/vhpl01 1622043539
+AR mux2_4bit behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/MUX2_4bit.vhd sub00/vhpl05 1622043534
+EN mux2_4bit NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/MUX2_4bit.vhd sub00/vhpl00 1622043533

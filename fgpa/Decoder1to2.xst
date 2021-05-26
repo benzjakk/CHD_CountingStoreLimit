@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/xst"
+elaborate
+-ifn Decoder1to2.prj
+-ifmt mixed

@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd 2021/05/26.22:15:54 P.20131013
+EN work/UART_TX 1622042164 \
+      FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UART_TX/RTL 1622042165 \
+      FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd \
+      EN work/UART_TX 1622042164

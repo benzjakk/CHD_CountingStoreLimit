@@ -33,7 +33,7 @@ entity Display is
     Port ( D1 : in  STD_LOGIC_VECTOR (3 downto 0);
            D10 : in  STD_LOGIC_VECTOR (3 downto 0);
            S : in  STD_LOGIC;
-           DO : out  STD_LOGIC_VECTOR (6 downto 0));
+           D0 : out  STD_LOGIC_VECTOR (6 downto 0));
 end Display;
 
 architecture Behavioral of Display is
@@ -46,7 +46,7 @@ architecture Behavioral of Display is
 		port(O:out std_logic_vector(6 downto 0);
 		I : in std_logic_vector(3 downto 0));
 	end component;
-	signal A:std_logic_vector;
+	signal A:std_logic_vector(3 downto 0);
 begin
 IC1:MUX2_4bit port map(D1=>D1,D2=>D10,S=>S,O=>A);
 IC2:BCDto7seg port map(I=>A,O=>D0);

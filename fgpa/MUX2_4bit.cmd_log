@@ -1,0 +1,3 @@
+vhdtdtfi -lib work MUX2_4bit.vhd -prj fgpa -o MUX2_4bit.spl -module MUX2_4bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 MUX2_4bit.spl C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/MUX2_4bit.sym 
+vhdtdtfi -prj fgpa -o C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/MUX2_4bit.tfi -module MUX2_4bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work MUX2_4bit.vhd 

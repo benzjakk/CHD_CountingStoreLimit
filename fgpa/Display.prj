@@ -1,0 +1,3 @@
+vhdl work "MUX2_4bit.vhd"
+vhdl work "BCDto7seg.vhd"
+vhdl work "Display.vhd"

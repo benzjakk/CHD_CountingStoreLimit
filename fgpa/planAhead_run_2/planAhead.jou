@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed May 26 22:45:50 2021
+# Process ID: 12068
+# Log file: C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P34 [get_ports {Data[3]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {Data[1]}]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports {Data[0]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {seg[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  CLK]]
+startgroup
+set_property package_pin P45 [get_ports Sen1]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports Sen2]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK]
+endgroup
+save_constraints

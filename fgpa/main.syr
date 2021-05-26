@@ -1,0 +1,483 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\MUX2_4bit.vhd" into library work
+Parsing entity <MUX2_4bit>.
+Parsing architecture <Behavioral> of entity <mux2_4bit>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\BCDto7seg.vhd" into library work
+Parsing entity <BCDto7seg>.
+Parsing architecture <Behavioral> of entity <bcdto7seg>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\UP_DOWNCOUNT15.vhd" into library work
+Parsing entity <UP_DOWNCOUNT15>.
+Parsing architecture <Behavioral> of entity <up_downcount15>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\Display.vhd" into library work
+Parsing entity <Display>.
+Parsing architecture <Behavioral> of entity <display>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\Decoder1to2.vhd" into library work
+Parsing entity <Decoder1to2>.
+Parsing architecture <Behavioral> of entity <decoder1to2>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\main.vhd" into library work
+Parsing entity <main>.
+Parsing architecture <Behavioral> of entity <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UP_DOWNCOUNT15> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX2_4bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCDto7seg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder1to2> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\Decoder1to2.vhd" Line 45. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\main.vhd".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <UP_DOWNCOUNT15>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\UP_DOWNCOUNT15.vhd".
+WARNING:Xst:647 - Input <Sen2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <D1tmp>.
+    Found 4-bit register for signal <D10tmp>.
+    Found finite state machine <FSM_0> for signal <D10tmp>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 3                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | Sen1 (rising_edge)                             |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <D1tmp[3]_GND_7_o_add_7_OUT> created at line 56.
+    Found 4-bit comparator greater for signal <PWR_7_o_D1tmp[3]_LessThan_3_o> created at line 50
+    Found 4-bit comparator lessequal for signal <D1tmp[3]_GND_7_o_LessThan_7_o> created at line 55
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <UP_DOWNCOUNT15> synthesized.
+
+Synthesizing Unit <Display>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\Display.vhd".
+    Summary:
+	no macro.
+Unit <Display> synthesized.
+
+Synthesizing Unit <MUX2_4bit>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\MUX2_4bit.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2_4bit> synthesized.
+
+Synthesizing Unit <BCDto7seg>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\BCDto7seg.vhd".
+    Found 16x7-bit Read Only RAM for signal <O>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCDto7seg> synthesized.
+
+Synthesizing Unit <Decoder1to2>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\Decoder1to2.vhd".
+    Summary:
+	no macro.
+Unit <Decoder1to2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCDto7seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <I>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <O>             |          |
+    -----------------------------------------------------------------------
+Unit <BCDto7seg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UP_DOWNCOUNT15>.
+The following registers are absorbed into counter <D1tmp>: 1 register on signal <D1tmp>.
+Unit <UP_DOWNCOUNT15> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 1
+ 4-bit comparator lessequal                            : 1
+# Multiplexers                                         : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <IC1/FSM_0> on signal <D10tmp[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 0
+ 0000  | 1
+-------------------
+
+Optimizing unit <main> ...
+
+Optimizing unit <UP_DOWNCOUNT15> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 15
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 3
+#      LUT5                        : 5
+#      LUT6                        : 4
+# FlipFlops/Latches                : 5
+#      FD                          : 2
+#      FDRE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 1
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               5  out of  11440     0%  
+ Number of Slice LUTs:                   15  out of   5720     0%  
+    Number used as Logic:                15  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     15
+   Number with an unused Flip Flop:      10  out of     15    66%  
+   Number with an unused LUT:             0  out of     15     0%  
+   Number of fully used LUT-FF pairs:     5  out of     15    33%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  11  out of    102    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Sen1                               | BUFGP                  | 5     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.281ns (Maximum Frequency: 304.785MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.929ns
+   Maximum combinational path delay: 6.606ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Sen1'
+  Clock period: 3.281ns (frequency: 304.785MHz)
+  Total number of paths / destination ports: 45 / 11
+-------------------------------------------------------------------------
+Delay:               3.281ns (Levels of Logic = 1)
+  Source:            IC1/D1tmp_3 (FF)
+  Destination:       IC1/D1tmp_3 (FF)
+  Source Clock:      Sen1 rising
+  Destination Clock: Sen1 rising
+
+  Data Path: IC1/D1tmp_3 to IC1/D1tmp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            12   0.525   1.297  IC1/D1tmp_3 (IC1/D1tmp_3)
+     LUT4:I1->O            3   0.235   0.765  IC1/_n00401 (IC1/_n0040)
+     FDRE:R                    0.459          IC1/D1tmp_1
+    ----------------------------------------
+    Total                      3.281ns (1.219ns logic, 2.062ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Sen1'
+  Total number of paths / destination ports: 32 / 7
+-------------------------------------------------------------------------
+Offset:              5.929ns (Levels of Logic = 2)
+  Source:            IC1/D1tmp_1 (FF)
+  Destination:       Data<6> (PAD)
+  Source Clock:      Sen1 rising
+
+  Data Path: IC1/D1tmp_1 to Data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            14   0.525   1.557  IC1/D1tmp_1 (IC1/D1tmp_1)
+     LUT6:I1->O            1   0.254   0.681  IC2/IC2/Mram_O21 (Data_2_OBUF)
+     OBUF:I->O                 2.912          Data_2_OBUF (Data<2>)
+    ----------------------------------------
+    Total                      5.929ns (3.691ns logic, 2.238ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               6.606ns (Levels of Logic = 3)
+  Source:            CLK (PAD)
+  Destination:       Data<6> (PAD)
+
+  Data Path: CLK to Data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.328   1.431  CLK_IBUF (CLK_IBUF)
+     LUT6:I0->O            1   0.254   0.681  IC2/IC2/Mram_O21 (Data_2_OBUF)
+     OBUF:I->O                 2.912          Data_2_OBUF (Data<2>)
+    ----------------------------------------
+    Total                      6.606ns (4.494ns logic, 2.112ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Sen1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Sen1           |    3.281|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.45 secs
+ 
+--> 
+
+Total memory usage is 4503192 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

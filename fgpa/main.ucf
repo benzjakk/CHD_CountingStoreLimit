@@ -1,0 +1,19 @@
+
+
+NET "Data[6]" LOC = P41;
+NET "Data[5]" LOC = P40;
+NET "Data[4]" LOC = P35;
+NET "Data[2]" LOC = P32;
+
+# PlanAhead Generated physical constraints 
+
+NET "Data[3]" LOC = P34;
+NET "Data[1]" LOC = P29;
+NET "Data[0]" LOC = P26;
+NET "seg[1]" LOC = P43;
+NET "seg[0]" LOC = P44;
+NET "Sen1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "Sen2" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "Sen1" LOC = P45;
+NET "Sen2" LOC = P46;
+NET "CLK" LOC = P123;
