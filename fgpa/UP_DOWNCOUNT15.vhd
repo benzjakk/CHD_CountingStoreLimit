@@ -38,37 +38,41 @@ entity UP_DOWNCOUNT15 is
 end UP_DOWNCOUNT15;
 
 architecture Behavioral of UP_DOWNCOUNT15 is
-	signal D1tmp : STD_LOGIC_VECTOR(3 downto 0) :=x"0";
-	signal D10tmp : STD_logic_vector(3 downto 0 ):=x"0";
+	signal D1tmp : STD_LOGIC_VECTOR(3 downto 0) := "0001" ;
+	signal D10tmp : STD_logic_vector(3 downto 0) := "0001";
 	
 begin
-	process(Sen1,Sen2)
+	process(Sen2,Sen1)
 	begin
 		if( Sen1'Event and Sen1='1') then
-			if (D10tmp = 0) then
-				D1tmp <= D1tmp+1 ;
-				if(D1tmp > 9)then
-					D1tmp <= "0000";
-					D10tmp<="0001";
-					end if;
-			elsif(D10tmp =1) then
-				if(D1tmp < 5)then
-					D1tmp<=D1tmp+1;
-					end if;
-			end if;
-		elsif( Sen2'Event and Sen2='1') then
 			if(D10tmp = 1) then 
-				if(D1tmp=0) then
+				if(D1tmp =0) then
 					D10tmp <= "0000";
 					D1tmp <= "1001";
 				else
-					D1tmp <= "0000";
+					D1tmp <= D1tmp-1;
 				end if;
 			elsif(D10tmp = 0) then
 				if(D1tmp > 0)then
 					D1tmp <= D1tmp - 1;
 				end if;
 			end if;
+			
+		elsif Sen2'Event and Sen2='1' then
+			
+			if (D10tmp = 0) then
+				if(D1tmp = 9)then
+					D1tmp <= "0000";
+					D10tmp<="0001";
+				else
+					D1tmp <= D1tmp+1 ;		
+					end if;
+			elsif(D10tmp =1) then
+				if(D1tmp < 5)then
+					D1tmp<=D1tmp+1;
+					end if;
+			end if;
+			
 		end if;
 	end process;
 	D1 <=D1tmp;

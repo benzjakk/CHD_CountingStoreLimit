@@ -2,7 +2,7 @@ set -tmpdir "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/xst/projnav.
 set -xsthdpdir "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/xst"
 run -compileonly yes
 -p xc6slx9-2-tqg144
--top UP_DOWNCOUNT15
+-top ClockDivider
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -47,4 +47,4 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn UP_DOWNCOUNT15.prj
+-ifn ClockDivider.prj

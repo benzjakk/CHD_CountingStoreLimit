@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed May 26 22:55:03 2021
+Thu May 27 00:01:04 2021
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -45,8 +45,8 @@ Pinout by Pin Number:
 |P23       |           |IOBS     |IO_L41N_GCLK26_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P24       |           |IOBM     |IO_L41P_GCLK27_3          |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P25       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P26       |Data<0>    |IOB      |IO_L37N_3                 |OUTPUT   |LVCMOS25*  |3             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|P27       |           |IOBM     |IO_L37P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P26       |           |IOBS     |IO_L37N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P27       |Data<0>    |IOB      |IO_L37P_3                 |OUTPUT   |LVCMOS25*  |3             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P28       |           |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P29       |Data<1>    |IOB      |IO_L36N_3                 |OUTPUT   |LVCMOS25*  |3             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P30       |           |IOBM     |IO_L36P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -64,9 +64,9 @@ Pinout by Pin Number:
 |P42       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P43       |seg<1>     |IOB      |IO_L62N_D6_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P44       |seg<0>     |IOB      |IO_L62P_D5_2              |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|P45       |Sen1       |IOB      |IO_L49N_D4_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|P46       |Sen2       |IOB      |IO_L49P_D3_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|P47       |           |IOBS     |IO_L48N_RDWR_B_VREF_2     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P45       |           |IOBS     |IO_L49N_D4_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
+|P46       |Sen1       |IOB      |IO_L49P_D3_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P47       |Sen2       |IOB      |IO_L48N_RDWR_B_VREF_2     |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P48       |           |IOBM     |IO_L48P_D7_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P49       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P50       |           |IOBS     |IO_L31N_GCLK30_D15_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |

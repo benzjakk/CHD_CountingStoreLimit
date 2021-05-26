@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/xst
 
@@ -12,7 +12,7 @@ Total CPU time to Xst completion: 0.11 secs
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.12 secs
  
---> Reading design: UP_DOWNCOUNT15.prj
+--> Reading design: ClockDivider.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,9 +39,9 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\UP_DOWNCOUNT15.vhd" into library work
-Parsing entity <UP_DOWNCOUNT15>.
-Parsing architecture <Behavioral> of entity <up_downcount15>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\fgpa\ClockDivider.vhd" into library work
+Parsing entity <ClockDivider>.
+Parsing architecture <bhv> of entity <clockdivider>.
 
 
 Total REAL time to Xst completion: 3.00 secs

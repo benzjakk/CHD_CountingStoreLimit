@@ -31,45 +31,54 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data<0>     |        11.224(R)|      SLOW  |         4.836(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<1>     |        10.655(R)|      SLOW  |         4.540(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<2>     |        11.586(R)|      SLOW  |         5.039(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<3>     |        11.823(R)|      SLOW  |         5.197(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<4>     |        11.593(R)|      SLOW  |         5.065(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<5>     |        11.576(R)|      SLOW  |         5.044(R)|      FAST  |CLK_BUFGP         |   0.000|
+Data<6>     |        11.678(R)|      SLOW  |         5.121(R)|      FAST  |CLK_BUFGP         |   0.000|
+seg<0>      |        11.785(R)|      SLOW  |         5.153(R)|      FAST  |CLK_BUFGP         |   0.000|
+seg<1>      |        10.853(R)|      SLOW  |         4.692(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
 Clock Sen1 to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Data<0>     |        14.121(R)|      SLOW  |         6.241(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<1>     |        13.830(R)|      SLOW  |         6.043(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<2>     |        14.707(R)|      SLOW  |         6.625(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<3>     |        14.661(R)|      SLOW  |         6.552(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<4>     |        14.568(R)|      SLOW  |         6.675(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<5>     |        14.965(R)|      SLOW  |         6.731(R)|      FAST  |Sen1_BUFGP        |   0.000|
-Data<6>     |        14.905(R)|      SLOW  |         6.724(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<0>     |        14.666(R)|      SLOW  |         6.546(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<1>     |        14.397(R)|      SLOW  |         6.310(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<2>     |        14.887(R)|      SLOW  |         6.342(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<3>     |        14.673(R)|      SLOW  |         6.448(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<4>     |        15.145(R)|      SLOW  |         6.405(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<5>     |        15.018(R)|      SLOW  |         6.754(R)|      FAST  |Sen1_BUFGP        |   0.000|
+Data<6>     |        14.722(R)|      SLOW  |         6.520(R)|      FAST  |Sen1_BUFGP        |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.003|         |         |         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Sen1
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Sen1           |    2.769|         |         |         |
+Sen1           |    2.555|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-CLK            |Data<0>        |   12.012|
-CLK            |Data<1>        |   11.454|
-CLK            |Data<2>        |   12.680|
-CLK            |Data<3>        |   12.728|
-CLK            |Data<4>        |   13.068|
-CLK            |Data<5>        |   12.856|
-CLK            |Data<6>        |   13.292|
-CLK            |seg<0>         |   13.159|
-CLK            |seg<1>         |   12.253|
----------------+---------------+---------+
 
-
-Analysis completed Wed May 26 22:55:08 2021 
+Analysis completed Thu May 27 00:01:08 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

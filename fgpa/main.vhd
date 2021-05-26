@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -51,11 +51,18 @@ architecture Behavioral of main is
 		port(I : in std_logic;
 		O:out std_logic_vector(1 downto 0));
 	end component;
+	component ClockDivider
+		port (clk,reset: in std_logic;
+		clock_out: out std_logic);
+	end component;
 	signal A,B : std_logic_vector( 3 downto 0);
+	signal C : std_logic;
+	
 begin
 	IC1:UP_DOWNCOUNT15 port map(Sen1=>Sen1,Sen2=>Sen2,D1=>A,D10=>B);
-	IC2:Display port map(D1=>A,D10=>B,S=>CLK,D0=>Data);
-	IC3:Decoder1to2 port map(I=>CLK , O=>seg);
+	IC2:Display port map(D1=>A,D10=>B,S=>C,D0=>Data);
+	IC3:Decoder1to2 port map(I=>C , O=>seg);
+	IC4:ClockDivider port map(clk => CLK,reset=>'0',clock_out=>C);
 	
 
 end Behavioral;
