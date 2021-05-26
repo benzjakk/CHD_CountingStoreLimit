@@ -1,0 +1,66 @@
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+par -w -intstyle ise -ol high -mt off main01_map.ncd main01.ncd main01.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main01.twx main01.ncd -o main01.twr main01.pcf -ucf main01.ucf 
+bitgen -intstyle ise -f main01.ut main01.ncd 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+par -w -intstyle ise -ol high -mt off main01_map.ncd main01.ncd main01.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main01.twx main01.ncd -o main01.twr main01.pcf -ucf main01.ucf 
+bitgen -intstyle ise -f main01.ut main01.ncd 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+par -w -intstyle ise -ol high -mt off main01_map.ncd main01.ncd main01.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main01.twx main01.ncd -o main01.twr main01.pcf -ucf main01.ucf 
+bitgen -intstyle ise -f main01.ut main01.ncd 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+par -w -intstyle ise -ol high -mt off main01_map.ncd main01.ncd main01.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main01.twx main01.ncd -o main01.twr main01.pcf -ucf main01.ucf 
+bitgen -intstyle ise -f main01.ut main01.ncd 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main01.ucf -p xc6slx9-tqg144-2 main01.ngc main01.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main01_map.ncd main01.ngd main01.pcf 
+par -w -intstyle ise -ol high -mt off main01_map.ncd main01.ncd main01.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml main01.twx main01.ncd -o main01.twr main01.pcf -ucf main01.ucf 
+bitgen -intstyle ise -f main01.ut main01.ncd 

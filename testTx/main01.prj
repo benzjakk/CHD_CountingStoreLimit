@@ -1,0 +1,7 @@
+vhdl work "SwitchDis.vhd"
+vhdl work "main.vhd"
+vhdl work "Decoder1to4.vhd"
+vhdl work "CountMax.vhd"
+vhdl work "CountCurrent.vhd"
+vhdl work "CLKDivider.vhd"
+vhdl work "main01.vhd"

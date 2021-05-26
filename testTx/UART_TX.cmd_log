@@ -4,3 +4,8 @@ map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o UART_TX_
 par -w -intstyle ise -ol high -t 1 UART_TX_map.ncd UART_TX.ncd UART_TX.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TX.twx UART_TX.ncd -o UART_TX.twr UART_TX.pcf 
 bitgen -intstyle ise -f UART_TX.ut UART_TX.ncd 
+xst -intstyle ise -ifn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/UART_TX.xst" -ofn "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/UART_TX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc UART_TX.ucf -p xc3s400-tq144-4 UART_TX.ngc UART_TX.ngd  
+map -intstyle ise -p xc3s400-tq144-4 -cm area -ir off -pr off -c 100 -o UART_TX_map.ncd UART_TX.ngd UART_TX.pcf 
+par -w -intstyle ise -ol high -t 1 UART_TX_map.ncd UART_TX.ncd UART_TX.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UART_TX.twx UART_TX.ncd -o UART_TX.twr UART_TX.pcf -ucf UART_TX.ucf 

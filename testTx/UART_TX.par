@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-VK9LHVT::  Wed May 26 22:16:22 2021
+DESKTOP-VK9LHVT::  Thu May 27 01:02:56 2021
 
 par -w -intstyle ise -ol high -t 1 UART_TX_map.ncd UART_TX.ncd UART_TX.pcf 
 
@@ -71,10 +71,10 @@ Phase 7.5  Local Placement Optimization (Checksum:c344d99f) REAL time: 1 secs
 
 Phase 8.8  Global Placement
 ..
-Phase 8.8  Global Placement (Checksum:2bb01d88) REAL time: 2 secs 
+Phase 8.8  Global Placement (Checksum:2bb01d88) REAL time: 1 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:2bb01d88) REAL time: 2 secs 
+Phase 9.5  Local Placement Optimization (Checksum:2bb01d88) REAL time: 1 secs 
 
 Phase 10.18  Placement Optimization
 Phase 10.18  Placement Optimization (Checksum:3492c28b) REAL time: 2 secs 
@@ -95,25 +95,25 @@ Phase  1  : 185 unrouted;      REAL time: 2 secs
 
 Phase  2  : 166 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 70 unrouted;      REAL time: 3 secs 
+Phase  3  : 70 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 91 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  4  : 91 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
 Updating file: UART_TX.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
 
-Total REAL time to Router completion: 3 secs 
+Total REAL time to Router completion: 2 secs 
 Total CPU time to Router completion: 2 secs 
 
 Partition Implementation Status
@@ -172,7 +172,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 2 secs 
 
-Peak Memory Usage:  4389 MB
+Peak Memory Usage:  4388 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -105,20 +105,20 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd" in Library work.
-Entity <UART_TX> compiled.
-Entity <UART_TX> (Architecture <RTL>) compiled.
+Entity <uart_tx> compiled.
+Entity <uart_tx> (Architecture <rtl>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <UART_TX> in library <work> (architecture <RTL>) with generics.
+Analyzing hierarchy for entity <UART_TX> in library <work> (architecture <rtl>) with generics.
 	g_CLKS_PER_BIT = 115
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing generic Entity <UART_TX> in library <work> (Architecture <RTL>).
+Analyzing generic Entity <UART_TX> in library <work> (Architecture <rtl>).
 	g_CLKS_PER_BIT = 115
 Entity <UART_TX> analyzed. Unit <UART_TX> generated.
 
@@ -400,12 +400,12 @@ Offset:              7.271ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.28 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.09 secs
  
 --> 
 
-Total memory usage is 4514416 kilobytes
+Total memory usage is 4514424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

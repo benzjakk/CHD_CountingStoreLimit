@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+ NET "but2" CLOCK_DEDICATED_ROUTE = FALSE; 
+ NET "but1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "but1" LOC = P45;
+NET "but2" LOC = P46;
+NET "CLK" LOC = P123;
+NET "led1" LOC = P67;
+NET "led2" LOC = P74;
+NET "tx" LOC = P98;
+NET "sw1" LOC = P66;
+NET "sw2" LOC = P62;
+

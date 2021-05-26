@@ -1,8 +1,15 @@
-V3 3
-FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd 2021/05/26.22:15:54 P.20131013
-EN work/UART_TX 1622042164 \
+V3 7
+FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd 2021/05/27.01:09:54 P.20131013
+EN work/UART_TX 1622052840 \
       FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/UART_TX/RTL 1622042165 \
+AR work/UART_TX/RTL 1622052841 \
       FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd \
-      EN work/UART_TX 1622042164
+      EN work/UART_TX 1622052840
+FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.vhd 2021/05/27.01:13:58 P.20131013
+EN work/main01 1622052842 \
+      FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/main01/Behavioral 1622052843 \
+      FL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.vhd \
+      EN work/main01 1622052842 CP UART_TX

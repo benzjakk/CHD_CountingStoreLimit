@@ -1,2 +1,4 @@
-AR uart_tx rtl C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd sub00/vhpl01 1622042165
-EN uart_tx NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd sub00/vhpl00 1622042164
+AR uart_tx rtl C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd sub00/vhpl01 1622052841
+AR main01 behavioral C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.vhd sub00/vhpl03 1622052843
+EN main01 NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main01.vhd sub00/vhpl02 1622052842
+EN uart_tx NULL C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/main.vhd sub00/vhpl00 1622052840

@@ -3,7 +3,8 @@ Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml UART_TX.twx UART_TX.ncd -o UART_TX.twr UART_TX.pcf
+-n 3 -fastpaths -xml UART_TX.twx UART_TX.ncd -o UART_TX.twr UART_TX.pcf -ucf
+UART_TX.ucf
 
 Design file:              UART_TX.ncd
 Physical constraint file: UART_TX.pcf
@@ -74,14 +75,14 @@ i_Clk          |    4.668|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed May 26 22:16:28 2021 
+Analysis completed Thu May 27 01:03:02 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4492 MB
+Peak Memory Usage: 4491 MB
 
 
 

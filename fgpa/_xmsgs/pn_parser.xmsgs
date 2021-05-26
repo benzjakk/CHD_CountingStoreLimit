@@ -8,6 +8,24 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/BCDto7seg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/ClockDivider.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Decoder1to2.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/Display.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/MUX2_4bit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/UP_DOWNCOUNT15.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/benzs/Documents/GitHub/CWH_CountingStore/fgpa/main.vhd&quot; into library work</arg>
 </msg>
 
