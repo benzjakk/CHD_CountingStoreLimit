@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.11 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: main01.prj
 
@@ -105,18 +105,30 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\MUX2_4bit.vhd" into library work
+Parsing entity <MUX2_4bit>.
+Parsing architecture <Behavioral> of entity <mux2_4bit>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\BCDto7seg.vhd" into library work
+Parsing entity <BCDto7seg>.
+Parsing architecture <Behavioral> of entity <bcdto7seg>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\UART_TX.vhd" into library work
+Parsing entity <UART_TX>.
+Parsing architecture <RTL> of entity <uart_tx>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\UART_RX.vhd" into library work
 Parsing entity <UART_RX>.
 Parsing architecture <rtl> of entity <uart_rx>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\SwitchDis.vhd" into library work
 Parsing entity <SwitchDis>.
 Parsing architecture <Behavioral> of entity <switchdis>.
-Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\main.vhd" into library work
-Parsing entity <UART_TX>.
-Parsing architecture <RTL> of entity <uart_tx>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Display.vhd" into library work
+Parsing entity <Display>.
+Parsing architecture <Behavioral> of entity <display>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Decoder1to4.vhd" into library work
 Parsing entity <Decoder1to4>.
 Parsing architecture <Behavioral> of entity <decoder1to4>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Decoder1to2.vhd" into library work
+Parsing entity <Decoder1to2>.
+Parsing architecture <Behavioral> of entity <decoder1to2>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\CountMax.vhd" into library work
 Parsing entity <CountMax>.
 Parsing architecture <Behavioral> of entity <countmax>.
@@ -126,6 +138,9 @@ Parsing architecture <Behavioral> of entity <countcurrent>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\CLKDivider.vhd" into library work
 Parsing entity <ClockDivider>.
 Parsing architecture <bhv> of entity <clockdivider>.
+Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\bin2bcd.vhd" into library work
+Parsing entity <bin2bcd>.
+Parsing architecture <rtl> of entity <bin2bcd>.
 Parsing VHDL file "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\main01.vhd" into library work
 Parsing entity <main01>.
 Parsing architecture <Behavioral> of entity <main01>.
@@ -137,7 +152,7 @@ Parsing architecture <Behavioral> of entity <main01>.
 Elaborating entity <main01> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\main.vhd" Line 126. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\UART_TX.vhd" Line 126. Case statement is complete. others clause is never selected
 
 Elaborating entity <Decoder1to4> (architecture <Behavioral>) from library <work>.
 
@@ -152,6 +167,17 @@ Elaborating entity <CountMax> (architecture <Behavioral>) from library <work>.
 Elaborating entity <UART_RX> (architecture <rtl>) with generics from library <work>.
 INFO:HDLCompiler:679 - "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\UART_RX.vhd" Line 132. Case statement is complete. others clause is never selected
 
+Elaborating entity <bin2bcd> (architecture <rtl>) from library <work>.
+
+Elaborating entity <Display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX2_4bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCDto7seg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder1to2> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Decoder1to2.vhd" Line 45. Case statement is complete. others clause is never selected
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
@@ -163,7 +189,7 @@ Synthesizing Unit <main01>.
 Unit <main01> synthesized.
 
 Synthesizing Unit <UART_TX>.
-    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\main.vhd".
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\UART_TX.vhd".
         g_CLKS_PER_BIT = 174
     Found 1-bit register for signal <o_TX_Serial>.
     Found 1-bit register for signal <r_TX_Done>.
@@ -175,8 +201,8 @@ Synthesizing Unit <UART_TX>.
     Found finite state machine <FSM_0> for signal <r_SM_Main>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
-    | Transitions        | 9                                              |
-    | Inputs             | 2                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
     | Outputs            | 6                                              |
     | Clock              | i_Clk (rising_edge)                            |
     | Power Up State     | s_idle                                         |
@@ -201,8 +227,8 @@ Synthesizing Unit <Decoder1to4>.
     Found 4-bit register for signal <Otmp>.
     Found 2-bit register for signal <count>.
     Found 2-bit adder for signal <count[1]_GND_8_o_add_1_OUT> created at line 46.
-    Found 4x4-bit Read Only RAM for signal <PWR_9_o_GND_8_o_mux_8_OUT>
-    Found 2-bit comparator greater for signal <count[1]_PWR_9_o_LessThan_1_o> created at line 45
+    Found 4x4-bit Read Only RAM for signal <PWR_8_o_GND_8_o_mux_8_OUT>
+    Found 2-bit comparator greater for signal <count[1]_PWR_8_o_LessThan_1_o> created at line 45
     Summary:
 	inferred   1 RAM(s).
 	inferred   1 Adder/Subtractor(s).
@@ -275,8 +301,8 @@ Synthesizing Unit <UART_RX>.
     -----------------------------------------------------------------------
     Found 3-bit adder for signal <r_Bit_Index[2]_GND_18_o_add_11_OUT> created at line 104.
     Found 8-bit adder for signal <r_Clk_Count[7]_GND_18_o_add_19_OUT> created at line 117.
-    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_28_o_LessThan_11_o> created at line 103
-    Found 8-bit comparator greater for signal <r_Clk_Count[7]_PWR_28_o_LessThan_19_o> created at line 116
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_27_o_LessThan_11_o> created at line 103
+    Found 8-bit comparator greater for signal <r_Clk_Count[7]_PWR_27_o_LessThan_19_o> created at line 116
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  22 D-type flip-flop(s).
@@ -285,16 +311,71 @@ Synthesizing Unit <UART_RX>.
 	inferred   1 Finite State Machine(s).
 Unit <UART_RX> synthesized.
 
+Synthesizing Unit <bin2bcd>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\bin2bcd.vhd".
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_1_OUT> created at line 22.
+    Found 4-bit adder for signal <n0059> created at line 26.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_6_OUT> created at line 22.
+    Found 4-bit adder for signal <n0061> created at line 26.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_10_OUT> created at line 22.
+    Found 4-bit adder for signal <n0063> created at line 26.
+    Found 4-bit adder for signal <GND_19_o_GND_19_o_add_14_OUT> created at line 22.
+    Found 4-bit adder for signal <n0065> created at line 26.
+    Found 4-bit adder for signal <bin[4]_GND_19_o_add_18_OUT> created at line 22.
+    Found 4-bit adder for signal <n0067> created at line 26.
+    Found 3-bit comparator greater for signal <PWR_29_o_bin[7]_LessThan_1_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_4_o> created at line 25
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_6_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_8_o> created at line 25
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_10_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_12_o> created at line 25
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_14_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_16_o> created at line 25
+    Found 4-bit comparator greater for signal <GND_19_o_bin[4]_LessThan_18_o> created at line 21
+    Found 4-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_20_o> created at line 25
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <bin2bcd> synthesized.
+
+Synthesizing Unit <Display>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Display.vhd".
+    Summary:
+	no macro.
+Unit <Display> synthesized.
+
+Synthesizing Unit <MUX2_4bit>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\MUX2_4bit.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2_4bit> synthesized.
+
+Synthesizing Unit <BCDto7seg>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\BCDto7seg.vhd".
+    Found 16x7-bit Read Only RAM for signal <O>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCDto7seg> synthesized.
+
+Synthesizing Unit <Decoder1to2>.
+    Related source file is "C:\Users\benzs\Documents\GitHub\CWH_CountingStore\testTx\Decoder1to2.vhd".
+    Summary:
+	no macro.
+Unit <Decoder1to2> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
  4x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 18
  2-bit adder                                           : 1
  3-bit adder                                           : 2
  32-bit adder                                          : 1
+ 4-bit adder                                           : 10
  8-bit adder                                           : 2
  8-bit addsub                                          : 2
 # Registers                                            : 18
@@ -304,16 +385,19 @@ Macro Statistics
  32-bit register                                       : 1
  4-bit register                                        : 1
  8-bit register                                        : 6
-# Comparators                                          : 8
+# Comparators                                          : 18
  2-bit comparator greater                              : 1
- 3-bit comparator greater                              : 2
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 9
  8-bit comparator greater                              : 2
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 31
- 1-bit 2-to-1 multiplexer                              : 10
+# Multiplexers                                         : 64
+ 1-bit 2-to-1 multiplexer                              : 41
  1-bit 8-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 4
  32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 15
 # FSMs                                                 : 2
 
@@ -323,6 +407,20 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+
+Synthesizing (advanced) Unit <BCDto7seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <I>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <O>             |          |
+    -----------------------------------------------------------------------
+Unit <BCDto7seg> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ClockDivider>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -338,7 +436,7 @@ Unit <CountMax> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Decoder1to4>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-INFO:Xst:3231 - The small RAM <Mram_PWR_9_o_GND_8_o_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_PWR_8_o_GND_8_o_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -355,10 +453,12 @@ Unit <Decoder1to4> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
  4x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 4
- 3-bit adder                                           : 2
+# Adders/Subtractors                                   : 14
+ 3-bit adder                                           : 7
+ 4-bit adder                                           : 5
  8-bit adder                                           : 2
 # Counters                                             : 4
  2-bit up counter                                      : 1
@@ -366,15 +466,18 @@ Macro Statistics
  8-bit updown counter                                  : 2
 # Registers                                            : 49
  Flip-Flops                                            : 49
-# Comparators                                          : 8
+# Comparators                                          : 18
  2-bit comparator greater                              : 1
- 3-bit comparator greater                              : 2
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 9
  8-bit comparator greater                              : 2
  8-bit comparator lessequal                            : 3
-# Multiplexers                                         : 30
- 1-bit 2-to-1 multiplexer                              : 10
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 41
  1-bit 8-to-1 multiplexer                              : 1
+ 12-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 15
 # FSMs                                                 : 2
 
@@ -413,7 +516,12 @@ Optimizing unit <UART_TX> ...
 Optimizing unit <UART_RX> ...
 
 Optimizing unit <CountCurrent> ...
-WARNING:Xst:1293 - FF/Latch <IC4/count_20> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <bin2bcd> ...
+WARNING:Xst:1293 - FF/Latch <IC4/count_17> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_18> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_19> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_20> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_21> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_22> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <IC4/count_23> has a constant value of 0 in block <main01>. This FF/Latch will be trimmed during the optimization process.
@@ -441,8 +549,8 @@ Unit <main01> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 90
- Flip-Flops                                            : 90
+# Registers                                            : 87
+ Flip-Flops                                            : 87
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -467,30 +575,30 @@ Top Level Output File Name         : main01.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 266
+# BELS                             : 274
 #      GND                         : 1
-#      INV                         : 5
-#      LUT1                        : 19
-#      LUT2                        : 48
+#      INV                         : 6
+#      LUT1                        : 16
+#      LUT2                        : 26
 #      LUT3                        : 30
-#      LUT4                        : 6
-#      LUT5                        : 20
-#      LUT6                        : 57
-#      MUXCY                       : 33
-#      MUXF7                       : 10
+#      LUT4                        : 26
+#      LUT5                        : 24
+#      LUT6                        : 70
+#      MUXCY                       : 30
+#      MUXF7                       : 11
 #      VCC                         : 1
-#      XORCY                       : 36
-# FlipFlops/Latches                : 91
-#      FD                          : 41
+#      XORCY                       : 33
+# FlipFlops/Latches                : 88
+#      FD                          : 38
 #      FDE                         : 48
 #      FDR                         : 2
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
 # Clock Buffers                    : 2
 #      BUFGP                       : 2
-# IO Buffers                       : 5
+# IO Buffers                       : 16
 #      IBUF                        : 2
-#      OBUF                        : 3
+#      OBUF                        : 14
 
 Device utilization summary:
 ---------------------------
@@ -499,22 +607,22 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              91  out of  11440     0%  
- Number of Slice LUTs:                  186  out of   5720     3%  
-    Number used as Logic:               185  out of   5720     3%  
+ Number of Slice Registers:              88  out of  11440     0%  
+ Number of Slice LUTs:                  199  out of   5720     3%  
+    Number used as Logic:               198  out of   5720     3%  
     Number used as Memory:                1  out of   1440     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    186
-   Number with an unused Flip Flop:      95  out of    186    51%  
-   Number with an unused LUT:             0  out of    186     0%  
-   Number of fully used LUT-FF pairs:    91  out of    186    48%  
+ Number of LUT Flip Flop pairs used:    199
+   Number with an unused Flip Flop:     111  out of    199    55%  
+   Number with an unused LUT:             0  out of    199     0%  
+   Number of fully used LUT-FF pairs:    88  out of    199    44%  
    Number of unique control sets:        12
 
 IO Utilization: 
- Number of IOs:                           7
- Number of bonded IOBs:                   7  out of    102     6%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    102    17%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -541,7 +649,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 IC4/tmp                            | NONE(IC2/Otmp_3)       | 6     |
-CLK                                | BUFGP                  | 70    |
+CLK                                | BUFGP                  | 67    |
 IC7/r_SM_Main_FSM_FFd1             | NONE(IC5/tmp_7)        | 8     |
 but1                               | BUFGP                  | 8     |
 -----------------------------------+------------------------+-------+
@@ -555,9 +663,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.402ns (Maximum Frequency: 185.117MHz)
-   Minimum input arrival time before clock: 5.565ns
-   Maximum output required time after clock: 4.162ns
+   Minimum period: 5.217ns (Maximum Frequency: 191.681MHz)
+   Minimum input arrival time before clock: 4.785ns
+   Maximum output required time after clock: 11.243ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -580,7 +688,7 @@ Delay:               2.983ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              6   0.525   0.984  IC2/count_0 (IC2/count_0)
-     LUT2:I0->O            3   0.250   0.765  IC2/Mram_PWR_9_o_GND_8_o_mux_8_OUT31 (IC2/Mram_PWR_9_o_GND_8_o_mux_8_OUT3)
+     LUT2:I0->O            3   0.250   0.765  IC2/Mram_PWR_8_o_GND_8_o_mux_8_OUT31 (IC2/Mram_PWR_8_o_GND_8_o_mux_8_OUT3)
      FDR:R                     0.459          IC2/count_0
     ----------------------------------------
     Total                      2.983ns (1.234ns logic, 1.749ns route)
@@ -589,7 +697,7 @@ Delay:               2.983ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 4.880ns (frequency: 204.918MHz)
-  Total number of paths / destination ports: 1450 / 100
+  Total number of paths / destination ports: 1288 / 97
 -------------------------------------------------------------------------
 Delay:               4.880ns (Levels of Logic = 4)
   Source:            IC7/r_Clk_Count_5 (FF)
@@ -602,9 +710,9 @@ Delay:               4.880ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              5   0.525   1.069  IC7/r_Clk_Count_5 (IC7/r_Clk_Count_5)
-     LUT3:I0->O            1   0.235   0.682  IC7/GND_18_o_r_Clk_Count[7]_equal_2_o<7>_SW0 (N16)
+     LUT3:I0->O            1   0.235   0.682  IC7/GND_18_o_r_Clk_Count[7]_equal_2_o<7>_SW0 (N18)
      LUT6:I5->O           16   0.254   1.612  IC7/GND_18_o_r_Clk_Count[7]_equal_2_o<7> (IC7/GND_18_o_r_Clk_Count[7]_equal_2_o)
-     LUT6:I1->O            1   0.254   0.000  IC7/r_Clk_Count_1_dpot_G (N58)
+     LUT6:I1->O            1   0.254   0.000  IC7/r_Clk_Count_1_dpot_G (N63)
      MUXF7:I1->O           1   0.175   0.000  IC7/r_Clk_Count_1_dpot (IC7/r_Clk_Count_1_dpot)
      FDE:D                     0.074          IC7/r_Clk_Count_1
     ----------------------------------------
@@ -638,10 +746,10 @@ Delay:               5.217ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'but1'
-  Clock period: 5.402ns (frequency: 185.117MHz)
-  Total number of paths / destination ports: 296 / 8
+  Clock period: 4.895ns (frequency: 204.290MHz)
+  Total number of paths / destination ports: 272 / 8
 -------------------------------------------------------------------------
-Delay:               5.402ns (Levels of Logic = 4)
+Delay:               4.895ns (Levels of Logic = 4)
   Source:            IC6/tmp_1 (FF)
   Destination:       IC6/tmp_0 (FF)
   Source Clock:      but1 rising
@@ -651,37 +759,44 @@ Delay:               5.402ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.525   1.331  IC6/tmp_1 (IC6/tmp_1)
-     LUT6:I0->O            2   0.254   0.726  IC6/_n0026_inv1 (IC6/_n0026_inv1)
-     LUT6:I5->O            1   0.254   0.790  IC6/_n0026_inv3_SW2 (N31)
-     LUT5:I3->O            8   0.250   0.944  IC6/_n0026_inv4 (IC6/_n0026_inv)
+     FD:C->Q              10   0.525   1.116  IC6/tmp_1 (IC6/tmp_1)
+     LUT6:I4->O            1   0.250   0.681  IC6/_n00212 (IC6/_n00211)
+     MUXF7:S->O            1   0.185   0.681  IC6/_n00211 (IC6/_n00212)
+     MUXF7:S->O            8   0.185   0.944  IC6/_n0026_inv4 (IC6/_n0026_inv)
      LUT3:I2->O            1   0.254   0.000  IC6/tmp_0_rstpot (IC6/tmp_0_rstpot)
      FD:D                      0.074          IC6/tmp_0
     ----------------------------------------
-    Total                      5.402ns (1.611ns logic, 3.791ns route)
-                                       (29.8% logic, 70.2% route)
+    Total                      4.895ns (1.473ns logic, 3.422ns route)
+                                       (30.1% logic, 69.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'but1'
-  Total number of paths / destination ports: 68 / 8
+  Total number of paths / destination ports: 60 / 8
 -------------------------------------------------------------------------
-Offset:              5.565ns (Levels of Logic = 4)
+Offset:              4.785ns (Levels of Logic = 11)
   Source:            sw1 (PAD)
-  Destination:       IC6/tmp_0 (FF)
+  Destination:       IC6/tmp_7 (FF)
   Destination Clock: but1 rising
 
-  Data Path: sw1 to IC6/tmp_0
+  Data Path: sw1 to IC6/tmp_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   1.328   1.499  sw1_IBUF (sw1_IBUF)
-     LUT5:I0->O            1   0.254   0.958  IC6/_n0026_inv3_SW1 (N30)
-     LUT5:I1->O            8   0.254   0.944  IC6/_n0026_inv4 (IC6/_n0026_inv)
-     LUT3:I2->O            1   0.254   0.000  IC6/tmp_0_rstpot (IC6/tmp_0_rstpot)
-     FD:D                      0.074          IC6/tmp_0
+     IBUF:I->O            11   1.328   1.038  sw1_IBUF (sw1_IBUF)
+     INV:I->O              1   0.255   0.681  sw1_inv2_INV_0 (sw1_inv)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<0> (IC6/Mcount_tmp_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<1> (IC6/Mcount_tmp_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<2> (IC6/Mcount_tmp_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<3> (IC6/Mcount_tmp_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<4> (IC6/Mcount_tmp_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  IC6/Mcount_tmp_cy<5> (IC6/Mcount_tmp_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  IC6/Mcount_tmp_cy<6> (IC6/Mcount_tmp_cy<6>)
+     XORCY:CI->O           1   0.206   0.790  IC6/Mcount_tmp_xor<7> (Result<7>)
+     LUT3:I1->O            1   0.250   0.000  IC6/tmp_7_rstpot (IC6/tmp_7_rstpot)
+     FD:D                      0.074          IC6/tmp_7
     ----------------------------------------
-    Total                      5.565ns (2.164ns logic, 3.401ns route)
-                                       (38.9% logic, 61.1% route)
+    Total                      4.785ns (2.276ns logic, 2.509ns route)
+                                       (47.6% logic, 52.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -704,22 +819,48 @@ Offset:              2.009ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 3 / 3
+  Total number of paths / destination ports: 33 / 12
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            IC1/o_TX_Active (FF)
-  Destination:       led1 (PAD)
+Offset:              7.706ns (Levels of Logic = 3)
+  Source:            IC4/tmp (FF)
+  Destination:       Data7<6> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: IC1/o_TX_Active to led1
+  Data Path: IC4/tmp to Data7<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.725  IC1/o_TX_Active (IC1/o_TX_Active)
-     OBUF:I->O                 2.912          led1_OBUF (led1)
+     FD:C->Q              21   0.525   1.740  IC4/tmp (IC4/tmp)
+     LUT5:I0->O            7   0.254   1.340  IC9/IC1/Mmux_O3 (IC9/A<2>)
+     LUT6:I1->O            1   0.254   0.681  IC9/IC2/Mram_O61 (Data7_6_OBUF)
+     OBUF:I->O                 2.912          Data7_6_OBUF (Data7<6>)
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      7.706ns (3.945ns logic, 3.761ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'but1'
+  Total number of paths / destination ports: 1561 / 7
+-------------------------------------------------------------------------
+Offset:              11.243ns (Levels of Logic = 6)
+  Source:            IC6/tmp_6 (FF)
+  Destination:       Data7<6> (PAD)
+  Source Clock:      but1 rising
+
+  Data Path: IC6/tmp_6 to Data7<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              15   0.525   1.585  IC6/tmp_6 (IC6/tmp_6)
+     LUT5:I0->O            5   0.254   1.271  IC8/Mmux_GND_19_o_GND_19_o_MUX_112_o111 (IC8/Madd_GND_19_o_GND_19_o_add_14_OUT_lut<3>)
+     LUT5:I0->O            4   0.254   0.804  IC8/Mmux_GND_19_o_GND_19_o_MUX_120_o11 (IC8/Madd_n0067_Madd_cy<0>)
+     LUT6:I5->O            2   0.254   0.834  IC8/GND_19_o_GND_19_o_LessThan_20_o1 (IC8/GND_19_o_GND_19_o_LessThan_20_o)
+     LUT4:I2->O            7   0.250   1.365  IC9/IC1/Mmux_O2 (IC9/A<1>)
+     LUT6:I0->O            1   0.254   0.681  IC9/IC2/Mram_O61 (Data7_6_OBUF)
+     OBUF:I->O                 2.912          Data7_6_OBUF (Data7<6>)
+    ----------------------------------------
+    Total                     11.243ns (4.703ns logic, 6.540ns route)
+                                       (41.8% logic, 58.2% route)
 
 =========================================================================
 
@@ -733,8 +874,8 @@ Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
 CLK                   |    4.880|         |         |         |
 IC4/tmp               |    2.252|         |         |         |
-IC7/r_SM_Main_FSM_FFd1|    2.070|         |         |         |
-but1                  |    2.137|         |         |         |
+IC7/r_SM_Main_FSM_FFd1|    2.006|         |         |         |
+but1                  |    2.284|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock IC4/tmp
@@ -752,7 +893,7 @@ Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
 CLK                   |    5.595|         |         |         |
 IC7/r_SM_Main_FSM_FFd1|    5.217|         |         |         |
-but1                  |    5.438|         |         |         |
+but1                  |    5.637|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock but1
@@ -760,21 +901,21 @@ Clock to Setup on destination clock but1
                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------+---------+---------+---------+---------+
-IC7/r_SM_Main_FSM_FFd1|    5.393|         |         |         |
-but1                  |    5.402|         |         |         |
+IC7/r_SM_Main_FSM_FFd1|    5.114|         |         |         |
+but1                  |    4.895|         |         |         |
 ----------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.32 secs
+Total CPU time to Xst completion: 5.79 secs
  
 --> 
 
 Total memory usage is 4503192 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

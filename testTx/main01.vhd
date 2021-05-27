@@ -35,6 +35,9 @@ entity main01 is
 		but1 : in std_logic;
 		rx : in std_logic;
 		sw1 : in std_logic;
+		Data7 : out  STD_LOGIC_VECTOR (6 downto 0);
+      seg : out  STD_LOGIC_VECTOR (1 downto 0);
+		comm: out STD_logic_vector(1 downto 0);
 		led1,led2 : out std_logic
 		);
 end main01;
@@ -81,19 +84,38 @@ architecture Behavioral of main01 is
     o_RX_Byte   : out std_logic_vector(7 downto 0)
     );
 	end component;
+	component bin2bcd
+	port (bin :in std_logic_vector (7 downto 0);
+        bcd1 : out std_logic_vector (3 downto 0);
+        bcd2 : out std_logic_vector (3 downto 0));
+	end component;
+	component Display
+		port(D1,D10 : in std_logic_vector(3 downto 0);
+		s:in std_logic;
+		D0:out std_logic_vector(6 downto 0));
+	end component;
+	component Decoder1to2
+		port(I : in std_logic;
+		O:out std_logic_vector(1 downto 0));
+	end component;
+
 	signal A : std_logic_vector( 3 downto 0);
 	signal B : std_logic_vector(7 downto 0);
-	signal C,Trigger : std_logic;
+	signal newCLK,Trigger : std_logic;
 	signal Current,Max,Data_rx:std_logic_vector(7 downto 0);
+	signal bcd1,bcd2:std_logic_vector(3 downto 0);
+	
 begin
-	IC1: UART_TX port map(i_Clk =>CLK,i_TX_DV=>'1',i_TX_Byte=>B,o_TX_Active=>led1,o_TX_Serial =>tx,o_TX_Done=>led2);
-	IC2: Decoder1to4 port map(C,A);
+	IC1: UART_TX port map(i_Clk =>CLK,i_TX_DV=>newCLK,i_TX_Byte=>B,o_TX_Active=>led1,o_TX_Serial =>tx,o_TX_Done=>led2);
+	IC2: Decoder1to4 port map(newCLK,A);
 	IC3: SwitchDis port map("01111110",Current,"01111111",Max,B,A);
-	IC4: ClockDivider port map( CLK , '0',C);
+	IC4: ClockDivider port map( CLK , '0',newCLK);
 	IC5: CountCurrent port map(Data_rx,Max,Trigger,Current);
 	IC6: CountMax port map(sw1,Current,but1,Max);
 	IC7: UART_RX port map(CLK,rx,Trigger,Data_rx);
-	
-	
+	IC8: bin2bcd port map(Max,bcd1,bcd2);
+	IC9: Display port map(bcd1,bcd2,newCLK,Data7);
+	IC10: Decoder1to2 port map(newCLK,seg);
+	comm <= "11";
 end Behavioral;
 
