@@ -2,12 +2,12 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
   
-entity ClockDivider is
+entity ClockDividerV2 is
 port ( clk,reset: in std_logic;
 clock_out: out std_logic);
-end ClockDivider;
+end ClockDividerV2;
   
-architecture bhv of ClockDivider is
+architecture bhv of ClockDividerV2 is
   
 signal count: integer:=1;
 signal tmp : std_logic := '0';
@@ -21,7 +21,7 @@ count<=1;
 tmp<='0';
 elsif(clk'event and clk='1') then
 count <=count+1;
-if (count = 1000000) then
+if (count = 100000) then
 tmp <= NOT tmp;
 count <= 1;
 end if;

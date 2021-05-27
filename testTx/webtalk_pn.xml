@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu May 27 20:02:29 2021">
+<application name="pn" timeStamp="Thu May 27 21:35:19 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="D2897E7867B242308023163034B7F887" type="project"/>
-<property name="ProjectIteration" value="24" type="project"/>
+<property name="ProjectIteration" value="29" type="project"/>
 <property name="ProjectFile" value="C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/testTx.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2021-05-26T22:15:26" type="project"/>
 </section>
@@ -24,7 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2021-05-26T22:15:26" type="design"/>
 <property name="PROP_intWbtProjectID" value="D2897E7867B242308023163034B7F887" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="24" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="29" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
@@ -39,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-2" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VHDL" value="13" type="source"/>
+<property name="FILE_VHDL" value="14" type="source"/>
 </section>
 </application>
 </document>
