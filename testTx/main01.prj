@@ -1,3 +1,4 @@
+vhdl work "UART_RX.vhd"
 vhdl work "SwitchDis.vhd"
 vhdl work "main.vhd"
 vhdl work "Decoder1to4.vhd"

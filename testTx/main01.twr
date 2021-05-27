@@ -32,12 +32,12 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock but1
+Setup/Hold to clock CLK
 ------------+------------+------------+------------+------------+------------------+--------+
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-sw1         |    1.188(R)|      SLOW  |    1.443(R)|      SLOW  |but1_BUFGP        |   0.000|
+rx          |    2.074(R)|      SLOW  |   -0.634(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock but2
@@ -45,7 +45,7 @@ Setup/Hold to clock but2
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-sw2         |    0.279(R)|      SLOW  |    2.143(R)|      SLOW  |but2_BUFGP        |   0.000|
+sw2         |    1.336(R)|      SLOW  |    1.832(R)|      SLOW  |but2_BUFGP        |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -53,9 +53,10 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led1        |         9.155(R)|      SLOW  |         3.795(R)|      FAST  |CLK_BUFGP         |   0.000|
-led2        |        10.306(R)|      SLOW  |         4.306(R)|      FAST  |CLK_BUFGP         |   0.000|
-tx          |        10.496(R)|      SLOW  |         4.444(R)|      FAST  |CLK_BUFGP         |   0.000|
+buzzer      |         9.471(R)|      SLOW  |         3.918(R)|      FAST  |CLK_BUFGP         |   0.000|
+led1        |         9.895(R)|      SLOW  |         4.226(R)|      FAST  |CLK_BUFGP         |   0.000|
+led2        |        10.465(R)|      SLOW  |         4.387(R)|      FAST  |CLK_BUFGP         |   0.000|
+tx          |        10.266(R)|      SLOW  |         4.322(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -63,18 +64,8 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.966|         |         |         |
-but1           |    5.772|         |         |         |
-but2           |    7.126|         |         |         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock but1
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-but1           |    4.466|         |         |         |
-but2           |    6.224|         |         |         |
+CLK            |    3.932|         |         |         |
+but2           |    7.074|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock but2
@@ -82,19 +73,18 @@ Clock to Setup on destination clock but2
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-but1           |    4.161|         |         |         |
-but2           |    3.943|         |         |         |
+but2           |    3.950|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu May 27 03:24:42 2021 
+Analysis completed Thu May 27 18:05:11 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4571 MB
+Peak Memory Usage: 4572 MB
 
 
 

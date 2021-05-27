@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 27 03:24:37 2021
+Thu May 27 19:33:10 2021
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -64,7 +64,7 @@ Pinout by Pin Number:
 |P42       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P43       |           |IOBS     |IO_L62N_D6_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P44       |           |IOBM     |IO_L62P_D5_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P45       |but1       |IOB      |IO_L49N_D4_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P45       |           |IOBS     |IO_L49N_D4_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P46       |but2       |IOB      |IO_L49P_D3_2              |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P47       |           |IOBS     |IO_L48N_RDWR_B_VREF_2     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P48       |           |IOBM     |IO_L48P_D7_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -85,7 +85,7 @@ Pinout by Pin Number:
 |P63       |           |         |VCCO_2                    |         |           |2             |          |         |           |         |2.50     |          |           |                |
 |P64       |           |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P65       |           |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P66       |sw1        |IOB      |IO_L2N_CMPMOSI_2          |INPUT    |LVCMOS25*  |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P66       |           |IOBS     |IO_L2N_CMPMOSI_2          |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P67       |led1       |IOB      |IO_L2P_CMPCLK_2           |OUTPUT   |LVCMOS25*  |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P68       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P69       |           |IOBS     |IO_L1N_M0_CMPMISO_2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -102,7 +102,7 @@ Pinout by Pin Number:
 |P80       |           |IOBS     |IO_L46N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P81       |           |IOBM     |IO_L46P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P82       |           |IOBS     |IO_L45N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P83       |           |IOBM     |IO_L45P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P83       |buzzer     |IOB      |IO_L45P_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P84       |           |IOBS     |IO_L43N_GCLK4_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P85       |           |IOBM     |IO_L43P_GCLK5_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P86       |           |         |VCCO_1                    |         |           |1             |          |         |           |         |2.50     |          |           |                |
@@ -116,7 +116,7 @@ Pinout by Pin Number:
 |P94       |           |IOBS     |IO_L40N_GCLK10_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P95       |           |IOBM     |IO_L40P_GCLK11_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P96       |           |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P97       |           |IOBS     |IO_L34N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P97       |rx         |IOB      |IO_L34N_1                 |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P98       |tx         |IOB      |IO_L34P_1                 |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P99       |           |IOBS     |IO_L33N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P100      |           |IOBM     |IO_L33P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |

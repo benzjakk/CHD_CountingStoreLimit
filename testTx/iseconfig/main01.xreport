@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-05-27T02:18:04</DateModified>
+  <DateModified>2021-05-27T19:40:05</DateModified>
   <ModuleName>main01</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-05-27T19:37:00</SummaryTimeStamp>
   <SavedFilePath>C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx/iseconfig/main01.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/benzs/Documents/GitHub/CWH_CountingStore/testTx\</ImplementationReportsDirectory>
   <DateInitialized>2021-05-27T02:18:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

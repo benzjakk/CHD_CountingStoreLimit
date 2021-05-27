@@ -38,7 +38,7 @@ Port ( Sen : in  STD_LOGIC;
 end CountMax;
 
 architecture Behavioral of CountMax is
-Signal tmp : std_logic_vector(7 downto 0) := "00000000";
+Signal tmp : std_logic_vector(7 downto 0) := "00010100";
 begin
 process (CLK)
 	begin

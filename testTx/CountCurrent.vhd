@@ -31,9 +31,9 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity CountCurrent is
-	Port ( Sen : in  STD_LOGIC;
+	Port ( data : in  STD_LOGIC_vector( 7 downto 0);
 				Max : in std_logic_vector( 7 downto 0);
-           CLK : in  STD_LOGIC;
+           Trigger : in  STD_LOGIC;
 			  Output : out std_logic_vector(7 downto 0));
 end CountCurrent;
 
@@ -41,16 +41,16 @@ architecture Behavioral of CountCurrent is
 	Signal tmp : std_logic_vector(7 downto 0):= "00000000";
 	
 begin
-	process (CLK)
+	process (Trigger)
 	begin
-	if(CLK'Event and CLK ='1') then
-		if( Sen = '1') then 
-			if( tmp < Max ) then
-				tmp <= tmp+'1';
+	if(rising_edge(Trigger)) then
+		if(data="01010101") then
+			if(tmp < Max) then 
+				tmp <= tmp + '1';
 			end if;
-		else
-			if(tmp > 0 ) then
-				tmp <= tmp-'1';
+		elsif(data = "01000100") then
+			if(tmp > 0) then
+				tmp <= tmp - '1';
 			end if;
 		end if;
 	end if;
