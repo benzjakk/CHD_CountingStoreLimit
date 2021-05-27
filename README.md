@@ -1,4 +1,4 @@
-# CHD_CountingStore
+# CHD_CountingStoreLimit
 Computer Hardware Design Assignment
 เป็นส่วนหนึ่งของรายวิชา Computer Hardware Design @CE KMITL 2021
 
